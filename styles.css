@@ -7,9 +7,15 @@ body {
     min-height:         100vh;
     background-color:   #e0e0e0;
 }
+* {
+    font-family: "Kode Mono", "Arial";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: bold;
+  }
 
 .container {
-    width:          45%;
+    width:          47%;
     height:         50%;
     padding:        10px;
     border-radius:  8px;
@@ -33,6 +39,7 @@ body {
 
 .btns {
     width:           100%;
+    height:          100%;
     margin-top:      1.7em;
     display:         flex;
     justify-content: center;
@@ -41,30 +48,31 @@ body {
 }
 
 .extras {
-    width: 96px;
-    height: 30px;
-    font-size: 25px;
-    border: none;
-    outline: none;
-    margin: 5px;
+    width:         96px;
+    height:        30px;
+    font-size:     25px;
+    border:        none;
+    outline:       none;
+    margin:        5px;
     border-radius: 4px;
-    transition: .1s;
-    box-shadow:  5px 5px 8px #00000020,
-                -5px -5px 8px #ffffff; 
-    margin-top: 5px;
+    transition:   .1s;
+    box-shadow:    5px 5px 8px #00000020,
+                  -5px -5px 8px #ffffff; 
+    margin-top:    5px;
 }
 
 .row button {
-    width: 95px;
-    height: 30px;
-    font-size: 25px;
-    border: none;
-    outline: none;
-    margin: 5px;
-    border-radius: 4px;
-    transition: .1s;
-    box-shadow:  5px 5px 8px #00000020,
-                -5px -5px 8px #ffffff; 
+    width:           95px;
+    height:          30px;
+    font-size:       23px;
+    border:          none;
+    outline:         none;
+    text-align:      center;
+    justify-content: center;
+    margin:          4px;
+    transition:     .1s;
+    box-shadow:      5px 5px 8px #00000020,
+                    -5px -5px 8px #ffffff; 
 }
 
 .row button:hover {
@@ -80,17 +88,17 @@ body {
 }
 
 .display #out {
-    margin-bottom: .5em;
-    width: auto;
-    height: 70px;
-    font-size: 35px;
-    outline: none;
-    border: none;
-    text-align: right;
-    padding-right: .5em;
-    background: #ecf0f3;
-    border-radius: 6px;
-    box-shadow: inset 8px 8px 8px #cbced1, 
+    margin-bottom:    .5em;
+    width:             auto;
+    height:            70px;
+    font-size:         35px;
+    outline:           none;
+    border:            none;
+    text-align:        right;
+    padding-right:    .5em;
+    background:      #ecf0f3;
+    border-radius:     6px;
+    box-shadow: inset  8px 8px 8px #cbced1, 
                 inset -8px -8px 8px #ffffff;
 }
 
