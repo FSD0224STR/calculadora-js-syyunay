@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.2.0/math.min.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="output">
+            <input type="text" id="out" placeholder="0" disabled>
+
+            <button id="cle" class="extras" onclick="clearResult()"> C </button>
+            <button id="poi" class="extras" onclick="append('.')"> . </button>
+            <button id="com" class="extras" onclick="append(',')"> , </button>
+        </div>
+
+        <div class="btns">
+            <div class="row">
+                <button id="sin" class="btn" onclick="calculate(Math.sin)">sin</button>
+                <button id="cos" class="btn" onclick="calculate(Math.cos)">cos</button>
+                <button id="tan" class="btn" onclick="calculate(Math.tan)">tan</button>
+                <button id="log" class="btn" onclick="calculate(Math.log)">log</button>
+                <button id="pin" class="btn" onclick="append(Math.PI)"> π </button>
+                <button id="enu" class="btn" onclick="append(Math.E)"> e </button>
+                <button id="sqr" class="btn" onclick="calculate(Math.sqrt)"> √ </button>
+                <button id="div" class="btn" onclick="append('/')"> ÷ </button>
+            </div>
+            <div class="row">
+                <button id="exp" class="btn" onclick="calculate(Math.exp)">exp</button>
+                <button id="ele" class="btn" onclick="calculatePow()">e^x</button>
+                <button id="abs" class="btn" onclick="calculate(Math.abs)">abs</button>
+                <button id="rnd" class="btn" onclick="calculateRandom()">rnd</button>
+                <button id="sev" class="btn" onclick="append(7)"> 7 </button>
+                <button id="eig" class="btn" onclick="append(8)"> 8 </button>
+                <button id="nin" class="btn" onclick="append(8)"> 9 </button>
+                <button id="mul" class="btn" onclick="append('*')"> ⨯ </button>
+            </div>
+            <div class="row">
+                <button id="flr" class="btn" onclick="calculate(Math.floor)">flr</button>
+                <button id="mod" class="btn" onclick="append('%')"> % </button>
+                <button id="min" class="btn" onclick="calculate(Math.min)">min</button>
+                <button id="max" class="btn" onclick="calculate(Math.max)">max</button>
+                <button id="fou" class="btn" onclick="append(4)"> 4 </button>
+                <button id="fiv" class="btn" onclick="append(5)"> 5 </button>
+                <button id="six" class="btn" onclick="append(6)"> 6 </button>
+                <button id="plu" class="btn" onclick="append('+')"> + </button>
+            </div>
+            
+            <div class="row">
+                <button id="rou" class="btn" onclick="calculate(Math.round)">rou</button>
+                <button id="gtn" class="btn" onclick="append('>')"> > </button>
+                <button id="ltn" class="btn" onclick="append('<')"> < </button>
+                <button id="not" class="btn" onclick="append('!=')">!= </button>
+                <button id="one" class="btn" onclick="append(1)"> 1 </button>
+                <button id="two" class="btn" onclick="append(2)"> 2 </button>
+                <button id="thr" class="btn" onclick="append(3)"> 3 </button>
+                <button id="mns" class="btn" onclick="append('-')"> - </button>
+            </div>
+            <div class="row">
+                <button id="tru" class="btn" onclick="calculate(Math.trunc)">tru</button>
+                <button id="goe" class="btn" onclick="append('>=')"> >=</button>
+                <button id="loe" class="btn" onclick="append('<=')"> <=</button>
+                <button id="equ" class="btn" onclick="append('==')"> ==</button>
+                <button id="ope" class="btn" onclick="append('()')"> ( </button>
+                <button id="zer" class="btn" onclick="append('0')"> 0 </button>
+                <button id="clo" class="btn" onclick="append(')')"> ) </button>
+                <button id="res" class="btn" onclick="evaluateExpression()"> = </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
